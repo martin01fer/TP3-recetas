@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/empanada.ico">
+    <title>Delicia Empanadas</title>
+    <style>
+        body{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .menu ul{
+           display: flex;           
+           background-color: rgb(226, 66, 66);
+           padding: 10px;
+           border-radius: 20px;
+           border-top: 5px groove rgb(226, 21, 21); 
+           border-left: 5px groove rgb(226, 21, 21);          
+        }
+        .menu ul a{
+            text-decoration: none;
+            padding: 5px 20px;
+            color: white;
+            border-radius: 5px;
+        }
+        .menu ul:hover{
+            background-color: rgba(138, 17, 98, 0.5);
+            border-top: 5px groove rgb(138, 17, 98); 
+            border-left: 5px groove rgb(138, 17, 98);
+            box-shadow: 5px 7px 10px rgb(126, 111, 111);
+          
+        }
+        .menu ul a:hover{
+            background-color: rgba(138, 17, 98, 0.3);
+            transition: 0.5s;
+        }
+        .menu ul:active{
+            border: none;
+            box-shadow: none;
+            background-color: rgb(138, 17, 98, 0.8);
+        }
+        .menu ul a:active{           
+            color: black;           
+        }
+        header{
+            display: flex;
+            justify-content: space-between;        
+            flex-wrap: wrap;
+            /*position: fixed;*/
+         }
+         h2{
+             background-color: rgba(210, 105, 30, 0.2) ;
+             text-align: center;            
+         }
+         h2, h3{
+             padding-top: 10px;
+             padding-bottom: 10px;
+             border-top: 4px solid brown;
+         }
+         article{
+             padding-left: 20px;
+         }
+         .container{
+             display: flex;
+             flex-direction: row;
+             flex-wrap: wrap;
+         }
+         .cuerpo{
+             max-width: 100%;
+             width: 68%;
+             padding-right: 20px;
+         }
+         aside{
+             display: flex;
+             flex-direction: column;
+             width: 30%;             
+         }
+         aside .wiguet h3{
+             color: brown;
+             background-color: #ccc;
+             text-align: center;
+         }
+         aside .wiguet p{
+             background-color: chocolate;
+             color: white;
+             padding: 10px;
+         }
+         .Link_ini{
+             display: inline-block;
+             padding: 10px;
+             background-color: blue;
+             opacity: 0.7;
+             color: white;
+             text-decoration: none;
+             position: fixed;
+             border-radius: 30px;
+         } 
+         @media (max-width: 960px) {
+             .container{
+               flex-direction: column;            
+             }
+             aside .wiguet{
+                 width: 30%;
+                 padding: 10px;
+             }
+             aside{
+               flex-direction:row;
+               flex-wrap: wrap;
+               width: 100%;             
+             }            
+        }
+        @media (max-width: 660px){
+        aside .wiguet{
+                 width: 100%;
+                 
+             }
+            }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div>
+          <img src="imagenes/Logo_emp.png" width="200px" title="Logo de pizzaeia" alt="Logo de pizzeria"/>
+          <h1 style="font-size: 70px; font-family: Orelega One; color: rgb(72, 72, 167);
+           position: absolute; top: 20px; left:220px; text-shadow: 5px 7px 5px rgb(175, 159, 145);">Empanadas</h1>
+        </div>
+        <nav class="menu">  
+           <ul type=none>
+               <li><a href="#">Recetas</a></li>
+               <li><a href="#">Servicios</a></li>
+               <li><a href="#">Sobre Nosotros</a></li>
+               <li><a href="#">Contactos</a></li>
+           </ul>
+        </nav> 
+    </header>
+    <a href="#" class="Link_ini">Inicio</a>
+    <section>
+         <article>
+            <p>Las empanadas son las mejores opciones para compartir, además 
+               con todas estas recetas jamás podrás aburrirte y cada día podrás probar un sabor nuevo.
+               Y lo mejor de todo: ¡son tan fáciles de hacer y sus ingredientes tan económicos que las
+               vuelve ideales para iniciar tu propio negocio!            
+               Las empanadas básicamente son pequeños discos de masa doblados que
+               pueden rellenarse de prácticamente cualquier ingrediente, carne, mariscos, queso,
+               verduras, frutas, mermeladas, etc. Pueden prepararse horneadas o
+               fritas y ser dulces o saladas.</p>
+         </article>
+         <h2>ORIGEN DE LAS EMPANADAS</h2>
+         <article>            
+             <p>En primer lugar, su nombre proviene del español “empanar” que
+                literalmente significa cubrir o encerrar algo en una masa
+                o pan. Se cree que surgió a partir de la costumbre de rellenar
+                panes con vegetales y diferentes platillos para los viajeros,
+                 en la Edad Media se dieron cuenta que la carne y los alimentos
+                se conservaban por más tiempo cuando se envolvían en masa y se
+                 horneaban, así fue como surgieron platillos como los “calzone” 
+                 italianos, los “pasties” británicos y por supuesto las empanadas.</p>
+
+             <p>Aunque actualmente existen diferentes versiones, las primeras 
+                empanadas surgieron en España, durante la época de las invasiones árabes, 
+                desde entonces forman parte importante de la gastronomía de diferentes 
+                regiones como Asturias, Cantabria y sobre todo, Galicia en donde incluso
+                se celebra el Festival de la Empanada.
+
+                Además, en un inicio se preparaban principalmente de
+                mariscos y carnes, pero con el tiempo al rededor del mundo 
+                se han creado empanadas de todos los sabores, además dependiendo
+                el país o región el tamaño y forma puede cambiar.</p>
+         </article>
+         <h2 >VARIACIONES DE LAS EMPANADAS EN EL MUNDO</h2>
+         <img src="imagenes/banner_empanadas.png" alt="imagenes de empanadas" width="600px">
+         <ul type="circle">
+             <li>Galicia y Portugal: Se preparan de forma similar a un pastel que se corta en pedazos.</li>
+             <li>Cuba: Se conocen también como empanadillas, se fríen y por lo general son de picadillo o pollo</li>
+             <li>Cuba: Se conocen también como empanadillas, se fríen y por lo general son de picadillo o pollo</li>
+             <li>Bolivia: Existen diferentes tipos, las más populares son las salteñas con relleno líquido y el pastel frito.</li>
+             <li>Colombia: Se preparan con una masa de maíz o de harina, las más famosas son las de añejo, rellenas de arroz, arvejas o chícharos y carne.</li>
+             <li>Costa Rica: Las favoritas son las hechas con masa de plátano, rellenas de frijoles.</li>
+             <li>México: Los rellenos cambian según la región y pueden ser horneadas o fritas.</li>
+             <li>Indonesia: Conocidas como panadas, tienen una corteza gruesa de pan frito y se rellenan de atún y chiles picantes.</li>
+          </ul>
+    </section>
+    <section class="container">
+        <div class="cuerpo">
+             <h2 style="background-color: #ccc; width: 500px; text-align: center;">¿CÓMO HACER LA MASA?</h2>
+             <img src="imagenes/banner_empprepar.png" alt="imagen modo de preparacion" width="600px">
+           <H3 style="background-color: #ccc; width:200px; text-align: center;">INGREDIENTES</H3>
+          <ul type="circle">
+             <li>500 g de harina de trigo</li>
+             <li>1/2 cucharada de azúcar</li>
+             <li>1/2 cucharada de sal</li>
+             <li>200 g de mantequilla</li>
+          </ul>
+          <h3 style="background-color: #ccc; width: 200px; text-align:center;">PASO A PASO</h3>
+          <ol>
+            <li>En primer lugar, funde la mantequilla en una sartén.</li>
+            <li>Tamiza el harina y coloca en un tazón, junto con la sal y el azúcar.</li>
+            <li>Agrega la mantequilla fundida.</li>
+            <li>Mezcla por 8 minutos o hasta formar una masa homogénea que no se pegue</li>
+            <li>Deja reposar por 20 minutos.</li>
+            <li>Fintalmente, extiende con un rodillo y corta pequeños círculos con un cortador o el borde de un vaso.</li>
+          </ol>
+          <h3>No te pierdas esta receta de empanada de carne!!!</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/I7A8NGhuYMo"
+           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+           encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <aside>
+            <div class="wiguet">
+               <h3>Entrevista</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ipsam sed provident perspiciatis illo ad facere 
+                consequuntur voluptas, molestiae et numquam tenetur
+                voluptates quidem natus a autem obcaecati quis praesentium 
+               perferendis.</p>
+           </div>
+           <div class="wiguet">
+            <h3>Cursos de cocina</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+             Ipsam sed provident perspiciatis illo ad facere 
+             consequuntur voluptas, molestiae et numquam tenetur
+             voluptates quidem natus a autem obcaecati quis praesentium 
+            perferendis.</p>
+          </div>
+          <div class="wiguet">
+            <h3>Tips para un buen asado</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+             Ipsam sed provident perspiciatis illo ad facere 
+             consequuntur voluptas, molestiae et numquam tenetur
+             voluptates quidem natus a autem obcaecati quis praesentium 
+            perferendis.</p>
+          </div>
+          <div class="wiguet">
+            <h3>Festival gastronómico</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+             Ipsam sed provident perspiciatis illo ad facere 
+             consequuntur voluptas, molestiae et numquam tenetur
+             voluptates quidem natus a autem obcaecati quis praesentium 
+            perferendis.</p>
+        </div>
+        <div class="wiguet">
+         <h3>Subscribite!!</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Ipsam sed provident perspiciatis illo ad facere 
+          consequuntur voluptas, molestiae et numquam tenetur
+          voluptates quidem natus a autem obcaecati quis praesentium 
+         perferendis.</p>
+       </div>
+       
+        </aside>
+    </section>
+
+    <footer style="background-color: black; text-align: center; color: white; font-family: Orelega One;
+     font-size: 28px; height: 60px; padding-top: 15px ;">Empanadas para debustar y compartir
+    <a target="blank" href="https://www.whatsapp.com/" style="margin: 10px; text-decoration: none; color: white;">Contactanos 
+        <img src="imagenes/wspLOg.jpg" alt="logo  wsp" width="40px"></a>   
+    </footer>
+</body>
+</html>
